@@ -1,22 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- <link rel="shortcut icon" type="image/png" href="/favicon.png" /> -->
+
 <head>
-  <title>ACE in Action</title>
+  <meta charset="UTF-8">
+
+  <meta name="title" content="TSC Editor">
+  <meta name="description" content="TSC Editor Description">
+
+  <meta name="og:title" content="TSC Editor">
+  <meta name="og:description" content="TSC Editor Description">
+  <!-- TSC youtube -->
+  <meta name="og:url" content="https://www.youtube.com/channel/UCNXt2MrZaqfIBknamqwzeXA">
+  <meta name="og:image" content="https://avatars2.githubusercontent.com/u/24659713?s=460&v=4">
+  <meta name="theme-color" content="#42f492">
+
+  <title>TSC | Editor</title>
+
+  <!-- <link rel="stylesheet" href="./css/style.css"> -->
+  <!-- <script src="./js/typer.js"></script> -->
+
   <style type="text/css" media="screen">
+    body {
+      overflow: hidden;
+    }
+
     #editor {
+      margin: 0;
       position: absolute;
       top: 0;
-      right: 0;
       bottom: 0;
       left: 0;
+      right: 0;
     }
   </style>
 </head>
 
 <body>
 
-  <div id="editor">function foo(items){ var x = "All this is syntax highlighted"; return x; } console.log(foo());</div>
+  <pre id="editor">
+function foo(items) {
+    var i;
+    for (i = 0; i &lt; items.length; i++) {
+        alert("Ace Rocks " + items[i]);
+    }
+}</pre>
 
   <script src="./ace-builds/src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
   <script>
