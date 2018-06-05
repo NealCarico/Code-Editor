@@ -14,11 +14,11 @@
   <!-- TSC youtube -->
   <meta name="og:url" content="https://www.youtube.com/channel/UCNXt2MrZaqfIBknamqwzeXA">
   <meta name="og:image" content="https://avatars2.githubusercontent.com/u/24659713?s=460&v=4">
-  <meta name="theme-color" content="#42f492">
+  <meta name="theme-color" content="#00FFFF">
 
   <title>TSC | Editor</title>
 
-  <!-- <link rel="stylesheet" href="./css/style.css"> -->
+  <link rel="stylesheet" href="./css/editor.css">
   <!-- <script src="./js/typer.js"></script> -->
 
   <style type="text/css" media="screen">
@@ -39,13 +39,23 @@
 
 <body>
 
-  <pre id="editor">
-function foo(items) {
-    var i;
-    for (i = 0; i &lt; items.length; i++) {
-        alert("Ace Rocks " + items[i]);
-    }
-}</pre>
+  <div class="container">
+
+    <pre id="editor"></pre>
+
+    <div class="console">
+      <div class="buttons">
+        <button onclick="runCode();">RUN</button>
+        <button onClick="clearConsole();">CLEAR</button>
+      </div>
+      <div id="console-text"></div>
+    </div>
+
+    <div class="tutorial">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi exercitationem cumque dicta eos voluptate provident excepturi quo, quia iusto. Dolorem ipsa temporibus soluta maiores laboriosam distinctio, quis qui. Veniam soluta recusandae praesentium
+      voluptas. Earum in nesciunt, pariatur ab dolores dolor distinctio sunt reprehenderit temporibus quia facere corporis laudantium ratione fuga fugit ipsa itaque amet eum quis provident obcaecati deleniti. Veritatis, vero. Nihil impedit aperiam hic
+      excepturi doloribus natus quibusdam eum ut nesciunt nemo corporis tenetur, id eius, atque aspernatur iure. Eos error culpa distinctio maiores illo quas sint magnam, delectus ad autem, quis soluta facilis fugiat optio harum non corporis.</div>
+
+  </div>
 
   <script src="./ace-builds/src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
   <script>
@@ -53,6 +63,10 @@ function foo(items) {
     editor.setTheme("ace/theme/monokai");
     editor.session.setMode("ace/mode/javascript");
   </script>
+
+  <!-- JavaScript files -->
+  <script src="./js/editor.js"></script>
+  <script src="./js/console.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,71 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1vw;
+  height: 100vh;
+  background-color: #00FFFF;
+}
+
+#editor {
+  grid-column: 1;
+  width: 32.7vw;
+}
+
+.console {
+  font-size: 1.1rem;
+  font-family: monospace;
+  grid-column: 2;
+  color: #F8F8F2;
+  background-color: #272822;
+  display: grid;
+  grid-template-rows: 6vh 94vh;
+  grid-gap: 1vh;
+}
+
+.console .buttons {
+  padding: 10px;
+  grid-row: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1vw;
+}
+
+#console-text {
+  padding: 0 10px;
+  overflow-y: scroll;
+}
+
+.console button {
+  color: #272822;
+  background-color: #00FFFF;
+  border: none;
+  padding: 5px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.console .log {
+  padding: 15px 0;
+  border-bottom: 1px solid rgba(236, 238, 239, 0.25);
+}
+
+.console .error {
+  color: #ff5050;
+}
+
+.tutorial {
+  padding: 10px;
+  font-size: 1.1rem;
+  font-family: monospace;
+  grid-column: 3;
+  color: #F8F8F2;
+  background-color: #272822;
+}
