@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- <link rel="shortcut icon" type="image/png" href="/favicon.png" /> -->
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="title" content="TSC Editor">
+  <meta name="description" content="TSC Editor Description">
+
+  <meta name="og:title" content="TSC Editor">
+  <meta name="og:description" content="TSC Editor Description">
+  <!-- TSC youtube -->
+  <meta name="og:url" content="https://www.youtube.com/channel/UCNXt2MrZaqfIBknamqwzeXA">
+  <meta name="og:image" content="https://avatars2.githubusercontent.com/u/24659713?s=460&v=4">
+  <meta name="theme-color" content="#00FFFF">
+
+  <title>TSC | Editor</title>
+
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="./css/container.css">
+  <link rel="stylesheet" href="./css/editor.css">
+  <link rel="stylesheet" href="./css/console.css">
+  <link rel="stylesheet" href="./css/tutorial.css">
+</head>
+
+<body>
+
+  <!-- Navigation bar -->
+  <nav></nav>
+
+  <!-- Container for the editor, console and tutorial -->
+  <div class="container">
+
+    <!-- Editor Class -->
+    <div class="editor">
+      <!-- Editor with code -->
+      <pre id="editor">function foo() {
+    console.log('bar');
+}
+foo();</pre>
+    </div>
+
+    <!-- Console Class -->
+    <div class="console">
+      <!-- Controls for the console -->
+      <div class="console-controls">
+        <button>Run</button>
+        <button>Clear</button>
+      </div>
+
+      <!-- Content for the console -->
+      <div class="console-content">
+        <pre>Lorem ipsum dolor sit amet.</pre>
+        <pre>Lorem ipsum dolor sit amet.</pre>
+        <pre>Lorem ipsum dolor sit amet.</pre>
+        <pre>Lorem ipsum dolor sit amet.</pre>
+        <pre>Lorem ipsum dolor sit amet.</pre>
+      </div>
+    </div>
+
+    <!-- Tutorial Class -->
+    <div class="tutorial"></div>
+
+  </div>
+
+  <script src="../ace-builds/src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+  <script>
+    const editor = ace.edit("editor");
+    editor.setTheme("ace/theme/monokai");
+    editor.session.setMode("ace/mode/javascript");
+  </script>
+
+  <!-- JavaScript files -->
+  <!-- <script src="./js/resizable.js"></script> -->
+</body>
+
+</html>

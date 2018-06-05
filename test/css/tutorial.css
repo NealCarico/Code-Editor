@@ -1,0 +1,7 @@
+.tutorial {
+  grid-column: 3;
+  background-color: var(--tutorial-background);
+
+  height: 100%;
+  width: 100%;
+}

@@ -1,0 +1,49 @@
+.console {
+  grid-column: 2;
+  background-color: var(--console-background);
+
+  height: 100%;
+  width: 100%;
+}
+
+
+/* Buttons for the console */
+
+.console .console-controls {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: var(--border-size);
+
+  background-color: var(--border-color);
+  border-bottom: var(--border-size) solid var(--border-color);
+}
+
+.console .console-controls button {
+  background-color: #4CAF50;
+  color: white;
+
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  outline: 0;
+  font-size: var(--font-size);
+}
+
+.console .console-controls button:active {
+  background-color: blue;
+}
+
+
+/* Content for the console */
+
+.console .console-content {
+  padding: 0 var(--console-side-padding);
+  font-size: var(--font-size);
+  color: var(--console-color);
+}
+
+.console .console-content pre {
+  padding: var(--console-content-padding) 0;
+  border-bottom: 1px solid rgba(236, 238, 239, 0.25);
+}

@@ -1,0 +1,46 @@
+:root {
+  /* Colors */
+  --dark-gray: #1e2124;
+
+  /* Nav settings */
+  --nav-height: 50px;
+
+  /* General settings */
+  --font-size: 1.1rem;
+  --border-size: 5px;
+  --border-color: red;
+
+  /* Editor settings */
+  --editor-background: var(--dark-gray);
+
+  /* Console settings */
+  --console-background: #272822;
+  --console-color: white;
+  --console-side-padding: 10px;
+  --console-content-padding: 15px;
+
+  /* Tutorial settings */
+  --tutorial-background: #272822;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  background-color: var(--dark-gray);
+  height: var(--nav-height);
+  width: 100vw;
+  border-bottom: var(--border-size) solid var(--border-color);
+}
+
+.container {
+  height: calc(100vh - var(--nav-height) - var(--border-size));
+  width: 100vw;
+  background-color: var(--border-color);
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: var(--border-size);
+}
