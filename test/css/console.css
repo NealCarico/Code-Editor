@@ -23,7 +23,7 @@
   color: white;
 
   border: none;
-  padding: 15px 32px;
+  height: var(--console-button-size);
   text-align: center;
   text-decoration: none;
   outline: 0;
@@ -38,12 +38,16 @@
 /* Content for the console */
 
 .console .console-content {
+  height: calc(100vh - 2 * var(--border-size) - var(--console-button-size) - var(--nav-height));
+  overflow: auto;
+
   padding: 0 var(--console-side-padding);
   font-size: var(--font-size);
   color: var(--console-color);
 }
 
 .console .console-content pre {
+  white-space: pre-wrap;
   padding: var(--console-content-padding) 0;
   border-bottom: 1px solid rgba(236, 238, 239, 0.25);
 }

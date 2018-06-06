@@ -11,13 +11,14 @@
   --border-color: red;
 
   /* Editor settings */
-  --editor-background: var(--dark-gray);
+  --editor-background: #272822;
 
   /* Console settings */
   --console-background: #272822;
   --console-color: white;
   --console-side-padding: 10px;
   --console-content-padding: 15px;
+  --console-button-size: 40px;
 
   /* Tutorial settings */
   --tutorial-background: #272822;

@@ -39,7 +39,8 @@
       <pre id="editor">function foo() {
     console.log('bar');
 }
-foo();</pre>
+foo();
+</pre>
     </div>
 
     <!-- Console Class -->
@@ -53,10 +54,7 @@ foo();</pre>
       <!-- Content for the console -->
       <div class="console-content">
         <pre>Lorem ipsum dolor sit amet.</pre>
-        <pre>Lorem ipsum dolor sit amet.</pre>
-        <pre>Lorem ipsum dolor sit amet.</pre>
-        <pre>Lorem ipsum dolor sit amet.</pre>
-        <pre>Lorem ipsum dolor sit amet.</pre>
+        <pre>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique ipsum, non dolore fugiat, animi cupiditate.</pre>
       </div>
     </div>
 
@@ -65,15 +63,13 @@ foo();</pre>
 
   </div>
 
-  <script src="../ace-builds/src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
-  <script>
-    const editor = ace.edit("editor");
-    editor.setTheme("ace/theme/monokai");
-    editor.session.setMode("ace/mode/javascript");
-  </script>
 
   <!-- JavaScript files -->
-  <!-- <script src="./js/resizable.js"></script> -->
+
+  <!-- Editor files -->
+  <script src="../ace-builds/src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+  <script src="./js/editor.js"></script>
+
 </body>
 
 </html>
