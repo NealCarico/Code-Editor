@@ -1,5 +1,5 @@
 .editor {
-  grid-column: 1;
+  grid-row: 1;
   background-color: var(--editor-background);
 
   height: 100%;

@@ -34,6 +34,11 @@ nav {
   height: var(--nav-height);
   width: 100vw;
   border-bottom: var(--border-size) solid var(--border-color);
+
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+  font-family: monospace;
 }
 
 .container {
@@ -41,7 +46,23 @@ nav {
   width: 100vw;
   background-color: var(--border-color);
 
-  display: grid;
+  /* display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: var(--border-size); */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   grid-gap: var(--border-size);
+}
+
+.left {
+  height: calc(100vh - var(--nav-height) - var(--border-size));
+
+  grid-column: 1;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: var(--border-size);
+}
+
+.right {
+  grid-column: 2;
 }
